@@ -5,3 +5,17 @@ CONCAT(c.FactID,'A' )
 end 
 )AS FactID,
 c.* from factdsFeatureActivityNonCommDetailforManagersCutover c;
+
+
+################
+
+Insert into ProdTable 
+Select (case
+when 1=1  then
+CONCAT(c.FactID,'A' )  
+end 
+)AS FactID,
+c.Months 
+from TestFactID c;
+
+################
