@@ -1,0 +1,7 @@
+SELECT 
+(case
+when 1=1  then
+CONCAT(c.FactID,'A' )  
+end 
+)AS FactID,
+c.* from factdsFeatureActivityNonCommDetailforManagersCutover c;
